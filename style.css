@@ -22,7 +22,7 @@ nav a:hover {
 
 nav {
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 
 header h1 {
