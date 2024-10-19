@@ -10,6 +10,7 @@ header {
     width: 350px;
     background: rgb(63, 63, 63);
     color: white !important;
+    overflow: auto;
 }
 
 nav a {
@@ -22,7 +23,7 @@ nav a:hover {
 
 nav {
     position: relative;
-    overflow: auto;
+    overflow: hidden;
 }
 
 header h1 {
