@@ -84,15 +84,46 @@ details:not(nav > details) {
 .container h1 {
     text-align: center;
     font-size: 45px;
+    margin-block: 15px;
 }
 
 .container h2 {
     font-size: 35px;
+    margin-block: 15px;
+}
+
+.container ul {
+    margin-block: 15px;
 }
 
 p {
     font-size: 30px;
+    margin-block: 15px;
 }
+
+blockquote {
+    font-size: 25px;
+    background: rgb(234, 234, 234);
+    margin: 0;
+    margin-block: 15px;
+    margin-inline: 5px;
+    padding: 30px;
+    border: 1px lightgrey solid;
+    border-radius: 5px;
+}
+
+.gr {
+    color: rgb(0, 186, 0);
+}
+
+.rd {
+    color: red;
+}
+
+.yl {
+    color: rgb(241, 241, 0);
+}
+
 
 @media (max-width: 630px) {
     header {
@@ -115,16 +146,18 @@ p {
     .container h1 {
         text-align: center;
         font-size: 35px;
+        margin-block: 15px;
     }
-    
+
     .container h2 {
         font-size: 25px;
+        margin-block: 15px;
     }
-    
+        
     p {
         font-size: 20px;
+        margin-block: 15px;
     }
-    
 
     .container {
         position: fixed;
