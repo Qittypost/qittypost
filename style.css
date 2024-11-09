@@ -1,0 +1,139 @@
+* {
+    font-family: ui-sans-serif,-apple-system,system-ui,Segoe UI,Helvetica,Apple Color Emoji,Arial,sans-serif,Segoe UI Emoji,Segoe UI Symbol;
+    -webkit-tap-highlight-color: transparent;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 350px;
+    background: rgb(63, 63, 63);
+    color: white !important;
+    overflow: auto;
+    z-index: 1;
+}
+
+header > p {
+    display: none;
+    position: absolute;
+    margin: 0;
+    font-size: 50px;
+    right: 10px;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav {
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+summary {
+    font-size: 30px;
+    margin: 0;
+}
+
+nav > details > a {
+    position: relative;
+    font-size: 30px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+ul {
+    font-size: 25px;
+    margin: 0;
+}
+
+details {
+    position: relative;
+}
+
+nav > details {
+    margin-left: 10px;
+}
+
+details:not(nav > details) {
+    margin-left: 20px;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 350px;
+    width: calc(100% - 360px);
+    height: calc(100% - 10px);
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding: 5px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.container h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 30px;
+}
+
+@media (max-width: 630px) {
+    header {
+        height: 90px;
+        width: 100%;
+        background: rgb(63, 63, 63);
+        color: white !important;
+        transition: .5s;
+    }
+
+    header h1 {
+        text-align: center;
+        font-size: 33px;
+    }
+
+    header > p {
+        display: block;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+    
+    .container h2 {
+        font-size: 25px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
+
+    .container {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: calc(100% - 10px);
+        height: calc(100% - 90px);
+        overflow: auto;
+        scroll-behavior: smooth;
+        padding: 5px;
+    }
+}
