@@ -42,6 +42,6 @@ time.addEventListener('change', () => {
 });
 
 submit.addEventListener('click', () => {
-    fetch(`http://localhost:8000/send_date?user_id=${encodeURIComponent(tg.initDataUnsafe.query_id)}&date=${date_inp.value}&time=${time_inp.value}`,
+    fetch(`http://localhost:8000/send_date?query_id=${encodeURIComponent(tg.initDataUnsafe.query_id)}&date=${date_inp.value}&time=${time_inp.value}`,
      {method: 'POST'});
 });
