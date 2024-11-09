@@ -17,8 +17,8 @@ let t = urlParams.get('time');
 
 const today = new Date();
 
-date.value = date_inp.value = d ? d : `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`; 
-time.value = time_inp.value = t ? t : `${today.getHours()}:${today.getMinutes()}`;
+date.value = date_inp.value = d ? d : `${today.getFullYear()}-${(today.getMonth() + 1).toString().padStart(2, '0')}-${today.getDate().toString().padStart(2, '0')}`; 
+time.value = time_inp.value = t ? t : `${today.getHours().toString().padStart(2, '0')}:${today.getMinutes().toString().padStart(2, '0')}`;
 
 
 date_inp.addEventListener('click', (e) => {
