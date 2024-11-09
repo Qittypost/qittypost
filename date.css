@@ -4,12 +4,12 @@
 }
 
 
-:root {
+/* :root {
     --tg-theme-bg-color: white;
     --tg-theme-text-color: black;
     --tg-theme-button-color: purple;
     --tg-theme-button-text-color: green;
-}
+} */
 
 body {
     background: color-mix(in srgb, var(--tg-theme-bg-color) 95%, black);
